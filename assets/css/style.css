@@ -1,7 +1,27 @@
-.menu-nav {
-  position: absolute;
+.menu {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  box-shadow: 2px 0px 5px rgb(0 0 0 / 20%);
 }
-.home-slaca {
+
+.menu li {
+  display: flex;
+  height: 35px;
+  padding-left: 24px;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 20%)
+}
+
+.menu a {
+  color:#725C5C;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.logo-slaca {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +29,7 @@
   background-image: linear-gradient(#FFB354, #EE7A3A);
 }
 
-.home-slaca p{
+.logo-slaca p{
   font-family: 'roboto';
   font-size: 30px;
   line-height: 35px;
@@ -18,7 +38,68 @@
 }
 
 .header-container {
+  display: flex;
+  font-family: 'roboto';
+  font-weight: 400;
+  color: #725C5C;
   width: 100%;
   height: 70px;
+  background: #FDF1EB;
+}
 
+.superinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0px 0px 256px;
+}
+
+.superinfo p {
+  font-size: 22px;
+  padding: 2px 0px;
+}
+
+.superinfo span {
+  font-size: 14px;
+}
+
+.language-btn {
+  width: 97px;
+  height: 34px;
+  margin: 17px 0px 0px 90px;
+  background: #FDF1EB;
+  display: flex;
+  align-items: center;
+  border: 1px solid #CCCCCC;
+}
+
+.userinfo {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 22px;
+}
+
+.profilepic {
+  border-radius: 50%;
+  margin: 19px 0px 0px 5px;
+}
+
+.notify {
+  position: relative;
+  bottom: 40px;
+  left: 25px;
+  width: 12px;
+  height: 12px;
+  background: tomato;
+  border-radius: 10px;
+  font-family: 'roboto';
+  font-size: 10px;
+  color: #FFFFFF;
+  padding-top: 1px;
+  text-align: center;
 }

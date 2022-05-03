@@ -347,7 +347,9 @@
   color: #ED7839;
 }
 
-#more {display: none;}
+#more {
+  display: none;
+}
 
 
 

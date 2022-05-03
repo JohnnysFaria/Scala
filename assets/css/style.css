@@ -7,9 +7,15 @@
 }
 
 .menu {
+  position: fixed;
+  z-index: 1000;
   width: 220px;
   height: 100vh;
   box-shadow: 2px 0px 5px rgb(0 0 0 / 20%);
+}
+
+.content {
+  margin-left: 220px;
 }
 
 .menu li {
@@ -50,7 +56,7 @@
   justify-content: center;
   font-family: 'roboto';
   font-weight: 400;
-  width: 1145px;
+  width: 1129px;
   color: #725C5C;
   height: 70px;
   background: #FDF1EB;
@@ -186,8 +192,6 @@
 }
 
 .video-container h3 {
-  display: flex;
-  align-items: center;
   background: #FDF1EB;
   font-family: 'Roboto';
   font-style: normal;
@@ -196,10 +200,10 @@
   line-height: 25px;
   color: #4E4E4E;
   padding: 10px 15px;
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
-.details {
+.details-container {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -211,20 +215,20 @@
   border: 1px solid #ECECEC;
 }
 
-.teste {
+.details {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
 }
 
-.details p {
+.details-container p {
   width: 212px;
   text-align: start;
   padding: 4px;
 }
 
-.details span {
+.details-container span {
   font-weight: 700;
 }
 
@@ -235,7 +239,7 @@
 }
 
 .video {
-  width: 740px;
+  width: 783px;
   height: 439px;
   background-image: url(../img/video.png);
   background-repeat: no-repeat;
@@ -243,7 +247,7 @@
 }
 .video:before {
   content: '';
-  width: 740px;
+  width: 783px;
   height: 439px;
   position: absolute;
   background: rgba(141, 53, 6, 0.5);
@@ -297,6 +301,44 @@
   letter-spacing: 0.05em;
   color: #FFFFFF;
   padding-left: 3px;
+}
+
+.resumo-container {
+  display: flex;
+  max-width: 1058px;
+  margin: 0 auto;
+}
+
+.resumo {
+  display: flex;
+  flex-direction: column;
+  width: 1028px;
+  height: 560px;
+  border: 1px solid #ECECEC;
+  margin-top: 20px;
+}
+
+.resumo h4 {
+  background: #FDF1EB;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.resumo-text p{
+  padding: 10px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #5C5C5C;
 }
 
 

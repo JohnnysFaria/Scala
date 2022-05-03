@@ -313,7 +313,7 @@
   display: flex;
   flex-direction: column;
   width: 1028px;
-  height: 560px;
+  height: 170px;
   border: 1px solid #ECECEC;
   margin-top: 20px;
 }
@@ -340,6 +340,14 @@
   letter-spacing: 0.02em;
   color: #5C5C5C;
 }
+
+
+#points {
+  font-weight: 700;
+  color: #ED7839;
+}
+
+#more {display: none;}
 
 
 

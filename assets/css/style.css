@@ -15,6 +15,7 @@
 }
 
 .content {
+  width: 1100px;
   margin-left: 220px;
 }
 
@@ -305,7 +306,7 @@
 
 .resumo-container {
   display: flex;
-  max-width: 1058px;
+  max-width: 1028px;
   margin: 0 auto;
 }
 
@@ -313,7 +314,6 @@
   display: flex;
   flex-direction: column;
   width: 1028px;
-  height: 170px;
   border: 1px solid #ECECEC;
   margin-top: 20px;
 }
@@ -341,7 +341,6 @@
   color: #5C5C5C;
 }
 
-
 #points {
   font-weight: 700;
   color: #ED7839;
@@ -350,6 +349,153 @@
 #more {
   display: none;
 }
+
+.topics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1028px;
+  height: 621px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #ECECEC;
+}
+
+.topic-title h5 {
+  background: #FDF1EB;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.topic {
+  width: 1028px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic h6 {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ED7839;
+}
+
+.topic p {
+  width: 626px;
+  margin: 0 auto;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+}
+
+.topic button {
+  align-items: center;
+  width: 133px;
+  height: 32px;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  border-radius: 4px;
+  border: none;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 14px;
+  z-index: 1;
+}
+
+.vetors {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.vetors img {
+  padding: 0px 30px;
+}
+
+.comment {
+  width: 97%;
+  min-height: 150px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.comment p:nth-child(1){
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ED7839;
+}
+.comment p:nth-child(2){
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5C5C5C;
+}
+.comment span{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4D4D4D;
+  margin-top: 10px;
+}
+
+.liked {
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.liked button {
+  width: 27px;
+  height: 19px;
+  background: #ED7839;
+  border-radius: 2px;
+  border: none;
+}
+
+.liked p {
+  font-family: 'Segoe UI', open-sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #757575;
+}
+
+footer {
+  align-items: center;
+}
+
+
 
 
 

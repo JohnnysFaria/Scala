@@ -15,3 +15,16 @@ function verMais() {
     teste.style.height = a + 'px';
   }
 }
+
+function criarTopico() {
+  const criar = document.getElementById('criar');
+  const teste = document.getElementById('teste');
+
+  if (criar.style.display === 'none') {
+    criar.style.display = 'inline';
+    teste.style.display = 'none';
+  } else {
+    criar.style.display = 'none';
+    teste.style.display = 'flex';
+  }
+}

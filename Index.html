@@ -99,10 +99,10 @@
 
     <section class="content">
       <div class="resumo-container">
-        <div class="resumo" id="teste">
+        <div class="resumo">
           <h4>Resumo</h4>
           <div class="resumo-text">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. <span id="points" onclick=verMais()>...ver Mais</span><br><br>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. <span id="points" onclick=verMais()>...ver mais</span><br><br>
 
               <span id="more"> Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio. <br><br>
 
@@ -121,7 +121,7 @@
       <div class="topics-container">
         <div class="topic-title">
           <h5>Discussões</h5>
-          <div class="topic">
+          <div class="topic" id="teste">
             <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
             <div class="vetors">
               <img src="./assets/img/icone1.png" alt="">
@@ -129,8 +129,16 @@
               <img src="./assets/img/icone3.png" alt="">
             </div>
             <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-            <button> <img src="./assets/img/criar.png"> Criar Tópico</button>
+            <button onclick=criarTopico()> <img src="./assets/img/criar.png"> Criar Tópico</button>
           </div>
+
+          <form class="topic-comment" id="criar">
+            <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+            <label for="assunto"> Assunto </label>
+            <input placeholder="Defina um tópico sucinto para notificar os autores..." type="text">
+            <label for="content"> Conteúdo </label>
+            <textarea name="content" cols="30" rows="10"></textarea>
+          </form>
         </div>
 
         <div class="comment">
@@ -156,10 +164,11 @@
             <p>1 resposta</p>
           </div>
         </div>
+        <footer>
+          <img src="./assets/img/footer.png">
+        </footer>
       </div>
-      <footer>
-        <img src="./assets/img/footer.png">
-      </footer>
+
     </section>
     <script src="./assets/js/index.js"> </script>
 </body>
